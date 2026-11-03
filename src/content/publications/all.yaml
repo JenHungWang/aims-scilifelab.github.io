@@ -266,3 +266,233 @@ items:
   authors: C. Matsoukas, J. F. Haslum, M. Sorkhei, M. Söderberg, K. Smith
   venue: arXiv preprint
   url: https://arxiv.org/abs/2303.07034
+- year: 2026
+  title: "Genomic characterization of ER-positive primary tumors and corresponding relapses identifies potentially targetable alterations"
+  authors: "C. Schagerholm, …, J. Lagergren"
+  venue: "npj Breast Cancer"
+  url: "https://doi.org/10.1038/s41523-026-01041-9"
+- year: 2026
+  title: "Multi-marginal flow matching with adversarially learnt interpolants"
+  authors: "O. Kviman, …, J. Lagergren"
+  venue: "ICLR"
+  url: "https://arxiv.org/abs/2510.01159"
+- year: 2025
+  title: "Sampling random spanning arborescences in graphs with low conductance"
+  authors: "V. Zampinetti, …, J. Lagergren"
+  venue: "Statistics & Probability Letters"
+  url: "https://doi.org/10.1016/j.spl.2025.110481"
+- year: 2025
+  title: "Computational pathology annotation enhances the resolution and interpretation of breast cancer spatial transcriptomics data"
+  authors: "T. Li, …, J. Lagergren"
+  venue: "npj Precision Oncology"
+  url: "https://doi.org/10.1038/s41698-025-01104-3"
+- year: 2024
+  title: "Sparse Neighbor Joining: rapid phylogenetic inference using a sparse distance matrix"
+  authors: "S. Kurt, …, J. Lagergren"
+  venue: "Bioinformatics"
+  url: "https://doi.org/10.1093/bioinformatics/btae701"
+- year: 2024
+  title: "CopyMix: mixture model based single-cell clustering and copy number profiling using variational inference"
+  authors: "N. Safinianaini, …, J. Lagergren"
+  venue: "Computational Biology and Chemistry"
+  url: "https://doi.org/10.1016/j.compbiolchem.2024.108257"
+- year: 2024
+  title: "Integrative spatial and genomic analysis of tumor heterogeneity with Tumoroscope"
+  authors: "S. Shafighi, …, J. Lagergren"
+  venue: "Nature Communications"
+  url: "https://doi.org/10.1038/s41467-024-53374-3"
+- year: 2024
+  title: "Scuphr: A probabilistic framework for cell lineage tree reconstruction"
+  authors: "H. Koptagel, …, J. Lagergren"
+  venue: "PLOS Computational Biology"
+  url: "https://doi.org/10.1371/journal.pcbi.1012094"
+- year: 2024
+  title: "Variational resampling"
+  authors: "O. Kviman, …, J. Lagergren"
+  venue: "AISTATS"
+  url: ""
+- year: 2024
+  title: "CopyVAE: a variational autoencoder-based approach for copy number variation inference using single-cell transcriptomics"
+  authors: "S. Kurt, …, J. Lagergren"
+  venue: "Bioinformatics"
+  url: "https://doi.org/10.1093/bioinformatics/btae284"
+- year: 2024
+  title: "VICTree – A Variational Inference Method for Clonal Tree Reconstruction"
+  authors: "H. Melin, …, J. Lagergren"
+  venue: "RECOMB (Lecture Notes in Computer Science)"
+  url: "https://doi.org/10.1007/978-1-0716-3989-4_46"
+- year: 2024
+  title: "Benefits of non-linear scale parameterizations in black box variational inference through smoothness results and gradient variance bounds"
+  authors: "A. Hotti, …, J. Lagergren"
+  venue: "AISTATS"
+  url: ""
+- year: 2024
+  title: "Clonally heritable gene expression imparts a layer of diversity within cell types"
+  authors: "J. Mold, …, J. Lagergren"
+  venue: "Cell Systems"
+  url: "https://doi.org/10.1016/j.cels.2024.01.004"
+- year: 2023
+  title: "Spatial transcriptomics of B cell and T cell receptors reveals lymphocyte clonal dynamics"
+  authors: "C. Engblom, …, J. Lagergren"
+  venue: "Science"
+  url: "https://doi.org/10.1126/science.adf8486"
+- year: 2023
+  title: "Cooperation in the latent space: The benefits of adding mixture components in variational autoencoders"
+  authors: "O. Kviman, …, J. Lagergren"
+  venue: "ICML"
+  url: ""
+- year: 2023
+  title: "Celloscope: a probabilistic model for marker-gene-driven cell type deconvolution in spatial transcriptomics data"
+  authors: "A. Geras, …, J. Lagergren"
+  venue: "Genome Biology"
+  url: "https://doi.org/10.1186/s13059-023-02951-8"
+- year: 2023
+  title: "Reconstructing clonal tree for phylo-phenotypic characterization of cancer using single-cell transcriptomics"
+  authors: "S.-H. Jun, …, J. Lagergren"
+  venue: "Nature Communications"
+  url: "https://doi.org/10.1038/s41467-023-36202-y"
+- year: 2023
+  title: "Breast cancer patient-derived whole-tumor cell culture model for efficient drug profiling and treatment response prediction"
+  authors: "X. Chen, …, J. Lagergren"
+  venue: "Proceedings of the National Academy of Sciences"
+  url: "https://doi.org/10.1073/pnas.2209856120"
+- year: 2022
+  title: "VaiPhy: a variational inference based algorithm for phylogeny"
+  authors: "H. Koptagel, …, J. Lagergren"
+  venue: "NeurIPS"
+  url: "https://doi.org/10.52202/068431-1073"
+- year: 2022
+  title: "ToMExO: A probabilistic tree-structured model for cancer progression"
+  authors: "M. Mohaghegh Neyshabouri, …, J. Lagergren"
+  venue: "PLOS Computational Biology"
+  url: "https://doi.org/10.1371/journal.pcbi.1010732"
+- year: 2022
+  title: "Multiple importance sampling ELBO and deep ensembles of variational approximations"
+  authors: "O. Kviman, …, J. Lagergren"
+  venue: "AISTATS"
+  url: ""
+- year: 2022
+  title: "DeepMP: a deep learning tool to detect DNA base modifications on Nanopore sequencing data"
+  authors: "J. Bonet, …, J. Lagergren"
+  venue: "Bioinformatics"
+  url: "https://doi.org/10.1093/bioinformatics/btab745"
+- year: 2020
+  title: "Inferring tumor progression in large datasets"
+  authors: "M. Mohaghegh Neyshabouri, …, J. Lagergren"
+  venue: "PLOS Computational Biology"
+  url: "https://doi.org/10.1371/journal.pcbi.1008183"
+- year: 2020
+  title: "Orthogonal Mixture of Hidden Markov Models"
+  authors: "N. Safinianaini, …, J. Lagergren"
+  venue: "ECML PKDD (Lecture Notes in Computer Science)"
+  url: "https://doi.org/10.1007/978-3-030-67658-2_29"
+- year: 2019
+  title: "BESIQ: A tool for discovering gene-gene and gene-environment interactions in genome-wide association studies"
+  authors: "M. Frånberg, …, J. Lagergren"
+  venue: ""
+  url: ""
+- year: 2019
+  title: "Discovering gene-environment interactions with Lasso"
+  authors: "M. Frånberg, …, J. Lagergren"
+  venue: ""
+  url: ""
+- year: 2018
+  title: "ADARs and editing: the role of A-to-I RNA modification in cancer progression"
+  authors: "K. Fritzell, …, J. Lagergren"
+  venue: "Seminars in Cell & Developmental Biology"
+  url: "https://doi.org/10.1016/j.semcdb.2017.11.018"
+- year: 2018
+  title: "Spatial maps of prostate cancer transcriptomes reveal an unexplored landscape of heterogeneity"
+  authors: "E. Berglund, …, J. Lagergren"
+  venue: "Nature Communications"
+  url: "https://doi.org/10.1038/s41467-018-04724-5"
+- year: 2018
+  title: "Evolutionary history of metastatic breast cancer reveals minimal seeding from axillary lymph nodes"
+  authors: "I. Ullah, …, J. Lagergren"
+  venue: "Journal of Clinical Investigation"
+  url: "https://doi.org/10.1172/jci96149"
+- year: 2017
+  title: "Fast and general tests of genetic interaction for genome-wide association studies"
+  authors: "M. Frånberg, …, J. Lagergren"
+  venue: "PLOS Computational Biology"
+  url: "https://doi.org/10.1371/journal.pcbi.1005556"
+- year: 2016
+  title: "Probabilistic inference of lateral gene transfer events"
+  authors: "M. A. Khan, …, J. Lagergren"
+  venue: "BMC Bioinformatics"
+  url: "https://doi.org/10.1186/s12859-016-1268-2"
+- year: 2016
+  title: "Computational cancer biology: an evolutionary perspective"
+  authors: "N. Beerenwinkel, …, J. Lagergren"
+  venue: "PLOS Computational Biology"
+  url: "https://doi.org/10.1371/journal.pcbi.1004717"
+- year: 2015
+  title: "Integrating sequence evolution into probabilistic orthology analysis"
+  authors: "I. Ullah, …, J. Lagergren"
+  venue: "Systematic Biology"
+  url: "https://doi.org/10.1093/sysbio/syv044"
+- year: 2015
+  title: "Gene-pseudogene evolution: a probabilistic approach"
+  authors: "O. Mahmudi, …, J. Lagergren"
+  venue: "BMC Genomics"
+  url: "https://doi.org/10.1186/1471-2164-16-s10-s12"
+- year: 2015
+  title: "RNA editing of non-coding RNA and its role in gene regulation"
+  authors: "C. Daniel, …, J. Lagergren"
+  venue: "Biochimie"
+  url: "https://doi.org/10.1016/j.biochi.2015.03.004"
+- year: 2015
+  title: "Discovering genetic interactions in large-scale association studies by stage-wise likelihood ratio tests"
+  authors: "M. Frånberg, …, J. Lagergren"
+  venue: "PLOS Genetics"
+  url: "https://doi.org/10.1371/journal.pgen.1005502"
+- year: 2015
+  title: "Species tree inference using a mixture model"
+  authors: "I. Ullah, …, J. Lagergren"
+  venue: "Molecular Biology and Evolution"
+  url: "https://doi.org/10.1093/molbev/msv115"
+- year: 2026
+  title: "Multicenter Morphometric Analysis of Stratum Corneum Nanotexture for Skin Barrier Assessment"
+  authors: "J.-H. Wang, …, G. Miranda"
+  venue: "Medical Imaging with Deep Learning (MIDL)"
+  url: ""
+- year: 2026
+  title: "Progress and new challenges in image-based profiling"
+  authors: "E. Serrano, …, G. Miranda"
+  venue: "Molecular Systems Biology"
+  url: "https://doi.org/10.1038/s44320-026-00197-7"
+- year: 2024
+  title: "Sustained immune activation and impaired epithelial barrier integrity in the ectocervix of women with chronic HIV infection"
+  authors: "M. Franzén Boger, …, G. Miranda"
+  venue: "PLOS Pathogens"
+  url: "https://doi.org/10.1371/journal.ppat.1012709"
+- year: 2024
+  title: "Evaluation of activated sludge settling characteristics from microscopy images with deep convolutional neural networks and transfer learning"
+  authors: "S. Borzooei, …, G. Miranda"
+  venue: "Journal of Water Process Engineering"
+  url: "https://doi.org/10.1016/j.jwpe.2024.105692"
+- year: 2024
+  title: "Deep Texture Feature Aggregation on Leaf Microscopy Images for Brazilian Plant Species Recognition"
+  authors: "L. Scabini, …, G. Miranda"
+  venue: "International Conference on Machine Learning Technologies (ICMLT)"
+  url: "https://doi.org/10.1145/3674029.3674063"
+- year: 2026
+  title: "A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer"
+  authors: "A. Rafeletou, F. Fathi, …, G. Taheri"
+  venue: "npj Digital Medicine"
+  url: "https://doi.org/10.1038/s41746-026-03254-5"
+- year: 2025
+  title: "GenePioneer: a comprehensive Python package for identification of essential genes and modules in cancer"
+  authors: "A. Haerianardakani, G. Taheri"
+  venue: "Bioinformatics Advances"
+  url: "https://doi.org/10.1093/bioadv/vbaf094"
+- year: 2024
+  title: "Machine Learning-Based Prediction for Drug-Drug Interaction Using a Knowledge Graph"
+  authors: "G. Taheri, M. Habibi, T. Sedghamiz"
+  venue: "ECML PKDD"
+  url: ""
+- year: 2024
+  title: "Uncovering driver genes in breast cancer through an innovative machine learning mutational analysis method"
+  authors: "G. Taheri, M. Habibi"
+  venue: "Computers in Biology and Medicine"
+  url: "https://doi.org/10.1016/j.compbiomed.2024.108234"
