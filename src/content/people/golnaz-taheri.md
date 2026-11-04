@@ -1,5 +1,22 @@
 ---
 name: "Golnaz Taheri"
+face:
+  skin: "#e9bf98"
+  face: "oval"
+  hair: {style: "long", color: "#3a281c"}
+  beard: {style: "none"}
+  eyes: "#3a2a1e"
+  glasses: "none"
+  shirt: "#c15a38"
+  collar: false
+  expression: "smile"
+  eyeSize: "xl"
+  eyeSpacing: "wide"
+  eyeShape: "almond"
+  browShape: "arched"
+  browWeight: "xthick"
+  noseSize: "md"
+  mouthWidth: "wide"
 role: "Assistant Professor"
 category: "lead"
 status: "current"

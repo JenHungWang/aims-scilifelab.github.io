@@ -1,5 +1,18 @@
 ---
 name: "Chanjuan Meng"
+face:
+  skin: "#f0d1ad"
+  face: "oval"
+  hair: {style: "long", color: "#1a1a22"}
+  beard: {style: "none"}
+  eyes: "#2a2018"
+  glasses: "none"
+  shirt: "#dfe3e8"
+  collar: false
+  expression: "smile"
+  eyeSize: "md"
+  eyeShape: "almond"
+  short: true
 role: "PhD Student"
 category: "phd"
 status: "current"

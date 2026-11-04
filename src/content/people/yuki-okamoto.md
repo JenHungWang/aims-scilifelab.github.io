@@ -1,5 +1,22 @@
 ---
 name: "Yuki Okamoto"
+face:
+  skin: "#f0cda6"
+  face: "round"
+  hair: {style: "short", color: "#15151c"}
+  beard: {style: "none"}
+  eyes: "#241a14"
+  glasses: "round"
+  shirt: "#2c3038"
+  collar: false
+  expression: "grin"
+  eyeSize: "md"
+  eyeShape: "narrow"
+  browShape: "straight"
+  browWeight: "med"
+  noseSize: "sm"
+  noseWidth: "med"
+  mouthWidth: "wide"
 role: "PhD Student"
 category: "phd"
 status: "current"

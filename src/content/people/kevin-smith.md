@@ -1,5 +1,14 @@
 ---
 name: "Kevin Smith"
+face:
+  skin: "#ecc8a6"
+  face: "oval"
+  hair: {style: "buzz", color: "#8a8178"}
+  beard: {style: "shortBeard"}
+  eyes: "#6d8192"
+  glasses: "none"
+  shirt: "#6f5c43"
+  expression: "smile"
 role: "Professor"
 category: "lead"
 status: "current"

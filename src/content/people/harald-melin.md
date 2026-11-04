@@ -1,5 +1,22 @@
 ---
 name: "Harald Melin"
+face:
+  skin: "#eec9a0"
+  face: "oval"
+  hair: {style: "short", color: "#6e5236"}
+  beard: {style: "none"}
+  eyes: "#7f94a0"
+  glasses: "none"
+  shirt: "#dfe3e8"
+  collar: true
+  expression: "grin"
+  eyeSize: "md"
+  eyeShape: "almond"
+  browShape: "soft"
+  browWeight: "med"
+  noseSize: "md"
+  noseWidth: "med"
+  mouthWidth: "wide"
 role: "PhD Student"
 category: "phd"
 status: "current"

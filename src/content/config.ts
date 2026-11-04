@@ -92,6 +92,9 @@ const people = defineCollection({
     aims_role: z.string().default(''),                 // e.g. "AiMS Affiliate"
     group_leader: z.string().default(''),              // which AiMS lead they work with, if relevant
     photo: z.string().default(''),                     // /people/<file>.jpg in public/, blank -> initials
+    // Cartoon avatar config (see src/lib/face.js). Built from a photo with the
+    // `people-cartoon-face` skill. Omit it and a varied seed-face is used.
+    face: z.object({}).passthrough().optional(),
     research_interests: z.array(z.string()).default([]),
     email: z.string().optional(),
     website: link,

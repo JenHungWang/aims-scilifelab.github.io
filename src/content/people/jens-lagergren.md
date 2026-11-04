@@ -1,5 +1,21 @@
 ---
 name: "Jens Lagergren"
+face:
+  skin: "#ecc6a2"
+  face: "wide"
+  hair: {style: "short", color: "#a39a8c"}
+  beard: {style: "none"}
+  eyes: "#6a7d8c"
+  glasses: "bold"
+  shirt: "#7d8794"
+  collar: true
+  expression: "slight"
+  eyeShape: "hooded"
+  browShape: "straight"
+  browWeight: "med"
+  noseSize: "lg"
+  noseWidth: "wide"
+  mouthWidth: "med"
 role: "Professor"
 category: "lead"
 status: "current"
