@@ -1,0 +1,8 @@
+title: "APLA"
+category: "code"
+url: "https://github.com/aims-scilifelab/APLA"
+description: "A simple, parameter-efficient way to adapt pretrained vision transformers to new tasks — strong results without full fine-tuning. M. Sorkhei, E. Konuk, K. Smith, C. Matsoukas."
+badge: "2025"
+featured: true
+order: 18
+draft: false
