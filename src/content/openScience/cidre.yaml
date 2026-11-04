@@ -1,0 +1,8 @@
+title: "CIDRE"
+category: "code"
+url: "https://github.com/aims-scilifelab/cidre-python"
+description: "Retrospective illumination correction for optical microscopy — estimates the vignetting (gain) and dark-offset surfaces from a set of images, no calibration frames needed. Python implementation."
+badge: "Nature Methods 2015"
+featured: true
+order: 15
+draft: false

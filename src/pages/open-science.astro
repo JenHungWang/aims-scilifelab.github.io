@@ -87,6 +87,25 @@ const orgRepos = (await fetchOrgRepos(GITHUB_ORG))
     </section>
   )}
 
+  {datasets.length > 0 && (
+    <!-- (c) Open datasets -->
+    <section class="section-tight" aria-labelledby="ds-h">
+      <div class="wrap">
+        <h2 id="ds-h" class="cat">Open datasets</h2>
+        <p class="muted measure sub">Datasets we have released or help maintain, with access instructions on each page.</p>
+        <ul class="res">
+          {datasets.map((i) => (
+            <li>
+              {i.data.url ? <a class="link" href={i.data.url} target="_blank" rel="noopener">{i.data.title}</a> : <span>{i.data.title}</span>}
+              {i.data.badge && <span class="ib">{i.data.badge}</span>}
+              {i.data.description && <span class="faint"> — {i.data.description}</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
   {orgRepos.length > 0 && (
     <!-- Auto-listed from the AiMS GitHub org (build-time) -->
     <section class="section-tight" aria-labelledby="repos-h">
@@ -112,25 +131,6 @@ const orgRepos = (await fetchOrgRepos(GITHUB_ORG))
             </a>
           ))}
         </div>
-      </div>
-    </section>
-  )}
-
-  {datasets.length > 0 && (
-    <!-- (c) Open datasets -->
-    <section class="section-tight" aria-labelledby="ds-h">
-      <div class="wrap">
-        <h2 id="ds-h" class="cat">Open datasets</h2>
-        <p class="muted measure sub">Datasets we have released or help maintain, with access instructions on each page.</p>
-        <ul class="res">
-          {datasets.map((i) => (
-            <li>
-              {i.data.url ? <a class="link" href={i.data.url} target="_blank" rel="noopener">{i.data.title}</a> : <span>{i.data.title}</span>}
-              {i.data.badge && <span class="ib">{i.data.badge}</span>}
-              {i.data.description && <span class="faint"> — {i.data.description}</span>}
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   )}
