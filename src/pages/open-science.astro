@@ -20,6 +20,29 @@ const rest = items.filter((i) => !i.data.featured && i.data.category !== 'data')
 const order = ['code', 'models', 'tools', 'benchmarks', 'protocols', 'other'];
 const label: Record<string, string> = { code: 'Code', models: 'Models', data: 'Datasets', tools: 'Tools', benchmarks: 'Benchmarks', protocols: 'Protocols', other: 'Other resources' };
 const restGroups = order.map((c) => ({ c, items: rest.filter((i) => i.data.category === c) })).filter((g) => g.items.length);
+
+// ── Auto-listed repositories from the AiMS GitHub organization ──────────────
+// Fetched at BUILD time (runs on GitHub Actions, which has network + a token),
+// so the list refreshes on every rebuild. Resilient: if the API can't be
+// reached, this returns [] and the section simply doesn't render.
+async function fetchOrgRepos(org: string) {
+  try {
+    const headers: Record<string, string> = { Accept: 'application/vnd.github+json', 'User-Agent': 'aims-site' };
+    const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+    if (token) headers.Authorization = `Bearer ${token}`;
+    const res = await fetch(`https://api.github.com/orgs/${org}/repos?per_page=100&type=public&sort=pushed`, { headers });
+    if (!res.ok) return [];
+    const data = await res.json();
+    return Array.isArray(data) ? data : [];
+  } catch { return []; }
+}
+// Don't repeat the website repo, or anything already shown as a curated entry.
+const repoSlug = (u: string) => { try { return (new URL(u).pathname.split('/').filter(Boolean)[1] || '').toLowerCase(); } catch { return ''; } };
+const curatedRepos = new Set(items.map((i) => repoSlug(i.data.url)).filter(Boolean));
+curatedRepos.add(`${GITHUB_ORG}.github.io`);
+const orgRepos = (await fetchOrgRepos(GITHUB_ORG))
+  .filter((r: any) => !r.private && !r.archived && !r.disabled && !curatedRepos.has(String(r.name).toLowerCase()))
+  .sort((a: any, b: any) => (b.stargazers_count - a.stargazers_count) || String(a.name).toLowerCase().localeCompare(String(b.name).toLowerCase()));
 ---
 <Base title="Open Science" description="Public code, models, datasets and tools from AiMS — reproducible research released where permitted.">
   <PageHeader eyebrow="Open Science" title="Open Science"
@@ -57,6 +80,35 @@ const restGroups = order.map((c) => ({ c, items: rest.filter((i) => i.data.categ
               </div>
               {i.data.description && <p class="muted pd">{i.data.description}</p>}
               <span class="link more2">View repository →</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {orgRepos.length > 0 && (
+    <!-- Auto-listed from the AiMS GitHub org (build-time) -->
+    <section class="section-tight" aria-labelledby="repos-h">
+      <div class="wrap">
+        <h2 id="repos-h" class="cat">All repositories</h2>
+        <p class="muted measure sub">Listed automatically from
+          <a class="link" href={GITHUB_URL} target="_blank" rel="noopener">github.com/{GITHUB_ORG}</a>
+          — refreshed every time the site is built.</p>
+        <div class="proj-grid">
+          {orgRepos.map((r: any) => (
+            <a class="card proj" href={r.html_url} target="_blank" rel="noopener">
+              <div class="proj-top">
+                <h3>{r.name}</h3>
+                {r.fork && <span class="badge">Fork</span>}
+              </div>
+              {r.description && <p class="muted pd">{r.description}</p>}
+              {(r.language || r.stargazers_count > 0) && (
+                <div class="rmeta">
+                  {r.language && <span class="chip">{r.language}</span>}
+                  {r.stargazers_count > 0 && <span class="chip">★ {r.stargazers_count}</span>}
+                </div>
+              )}
             </a>
           ))}
         </div>
@@ -143,6 +195,9 @@ const restGroups = order.map((c) => ({ c, items: rest.filter((i) => i.data.categ
   .badge { font-size: var(--step--2); letter-spacing: .02em; color: var(--muted);
            border: 1px solid var(--border); border-radius: 999px; padding: .12em .7em; white-space: nowrap; }
   .proj .pd { margin-top: .6rem; font-size: var(--step-0); }
+  .rmeta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: .9rem; }
+  .chip { font-size: var(--step--2); color: var(--muted); border: 1px solid var(--border);
+          border-radius: 999px; padding: .1em .65em; white-space: nowrap; }
   .more2 { display: inline-block; margin-top: 1rem; font-size: var(--step--1); }
 
   /* Lists */
