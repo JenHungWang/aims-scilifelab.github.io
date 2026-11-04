@@ -16,11 +16,8 @@ const years = [...byYear.keys()].sort((a, b) => b - a);
   <PageHeader eyebrow="Publications" title="Publications"
     lede="Our work across foundational machine learning, medicine and the life sciences." />
 
-  <section class="section-tight">
+  <section class="section-tight pub-list">
     <div class="wrap">
-      <p class="muted measure src-note">Publications from across AiMS — spanning our groups and collaborations. For a
-      researcher's full, up-to-date list, see their profile on the <a class="link" href="/people">People</a> page.</p>
-
       {years.map((y) => (
         <div class="yr">
           <h2 class="year">{y}</h2>
@@ -41,8 +38,8 @@ const years = [...byYear.keys()].sort((a, b) => b - a);
 </Base>
 
 <style>
-  .src-note { margin-bottom: 2rem; font-size: var(--step--1); }
-  .yr { margin-bottom: 2rem; }
+  .pub-list { padding-top: 0; margin-top: -1rem; }
+  .yr { margin-bottom: 5rem; }
   .year { font-size: var(--step-1); color: var(--muted); font-weight: 700; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
   .pubs { list-style: none; padding: 0; margin-top: 1rem; display: grid; gap: 1.1rem; max-width: var(--measure); }
   .ptitle { font-weight: 600; }

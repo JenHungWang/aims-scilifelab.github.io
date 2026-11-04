@@ -69,7 +69,7 @@ items:
 - year: 2024
   title: Learning from Offline Foundation Features with Tensor Augmentations
   authors: Konuk, E., Matsoukas, C., Sorkhei, M., Lertsiravaramet, P., & Smith, K
-  venue: Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS)
+  venue: "Conference on Neural Information Processing Systems (NeurIPS)"
   url: https://arxiv.org/abs/2410.02527
 - year: 2024
   title: Metadata-guided consistency learning for high content images
@@ -84,7 +84,7 @@ items:
 - year: 2024
   title: Random Token Fusion for Multi-View Medical Diagnosis
   authors: Guo, J., Matsoukas, C., Strand, F., & Smith, K
-  venue: Workshop on Advancements In Medical Foundation Models at 38th Conference on Neural Information Processing Systems (NeurIPS)
+  venue: "Workshop on Advancements in Medical Foundation Models at the Conference on Neural Information Processing Systems (NeurIPS)"
   url: https://arxiv.org/abs/2410.15847
 - year: 2024
   title: Use of an AI score combining cancer signs, masking, and risk to select patients for supplemental breast cancer screening
@@ -119,7 +119,7 @@ items:
 - year: 2021
   title: 'CSAW-M: An ordinal classification dataset for benchmarking mammographic masking of cancer'
   authors: Sorkhei, M., Azavedo, E., Zouzos, A., Liu, Y., Dembrower, K., Strand, F., Azizpour, H., Ntoula, D., & Smith, K
-  venue: Datasets and Benchmarks at 35th Conference on Neural Information Processing Systems (NeurIPS)
+  venue: "Datasets and Benchmarks at the Conference on Neural Information Processing Systems (NeurIPS)"
   url: https://arxiv.org/abs/2112.01330
 - year: 2021
   title: Conditional De-Identification of 3D Magnetic Resonance Images
@@ -274,7 +274,7 @@ items:
 - year: 2026
   title: "Multi-marginal flow matching with adversarially learnt interpolants"
   authors: "O. Kviman, …, J. Lagergren"
-  venue: "ICLR"
+  venue: "International Conference on Learning Representations (ICLR)"
   url: "https://arxiv.org/abs/2510.01159"
 - year: 2025
   title: "Sampling random spanning arborescences in graphs with low conductance"
@@ -309,7 +309,7 @@ items:
 - year: 2024
   title: "Variational resampling"
   authors: "O. Kviman, …, J. Lagergren"
-  venue: "AISTATS"
+  venue: "International Conference on Artificial Intelligence and Statistics (AISTATS)"
   url: ""
 - year: 2024
   title: "CopyVAE: a variational autoencoder-based approach for copy number variation inference using single-cell transcriptomics"
@@ -319,12 +319,12 @@ items:
 - year: 2024
   title: "VICTree – A Variational Inference Method for Clonal Tree Reconstruction"
   authors: "H. Melin, …, J. Lagergren"
-  venue: "RECOMB (Lecture Notes in Computer Science)"
+  venue: "International Conference on Research in Computational Molecular Biology (RECOMB)"
   url: "https://doi.org/10.1007/978-1-0716-3989-4_46"
 - year: 2024
   title: "Benefits of non-linear scale parameterizations in black box variational inference through smoothness results and gradient variance bounds"
   authors: "A. Hotti, …, J. Lagergren"
-  venue: "AISTATS"
+  venue: "International Conference on Artificial Intelligence and Statistics (AISTATS)"
   url: ""
 - year: 2024
   title: "Clonally heritable gene expression imparts a layer of diversity within cell types"
@@ -339,7 +339,7 @@ items:
 - year: 2023
   title: "Cooperation in the latent space: The benefits of adding mixture components in variational autoencoders"
   authors: "O. Kviman, …, J. Lagergren"
-  venue: "ICML"
+  venue: "International Conference on Machine Learning (ICML)"
   url: ""
 - year: 2023
   title: "Celloscope: a probabilistic model for marker-gene-driven cell type deconvolution in spatial transcriptomics data"
@@ -359,7 +359,7 @@ items:
 - year: 2022
   title: "VaiPhy: a variational inference based algorithm for phylogeny"
   authors: "H. Koptagel, …, J. Lagergren"
-  venue: "NeurIPS"
+  venue: "Conference on Neural Information Processing Systems (NeurIPS)"
   url: "https://doi.org/10.52202/068431-1073"
 - year: 2022
   title: "ToMExO: A probabilistic tree-structured model for cancer progression"
@@ -369,7 +369,7 @@ items:
 - year: 2022
   title: "Multiple importance sampling ELBO and deep ensembles of variational approximations"
   authors: "O. Kviman, …, J. Lagergren"
-  venue: "AISTATS"
+  venue: "International Conference on Artificial Intelligence and Statistics (AISTATS)"
   url: ""
 - year: 2022
   title: "DeepMP: a deep learning tool to detect DNA base modifications on Nanopore sequencing data"
@@ -384,7 +384,7 @@ items:
 - year: 2020
   title: "Orthogonal Mixture of Hidden Markov Models"
   authors: "N. Safinianaini, …, J. Lagergren"
-  venue: "ECML PKDD (Lecture Notes in Computer Science)"
+  venue: "European Conference on Machine Learning and Knowledge Discovery in Databases (ECML PKDD)"
   url: "https://doi.org/10.1007/978-3-030-67658-2_29"
 - year: 2019
   title: "BESIQ: A tool for discovering gene-gene and gene-environment interactions in genome-wide association studies"
@@ -489,7 +489,7 @@ items:
 - year: 2024
   title: "Machine Learning-Based Prediction for Drug-Drug Interaction Using a Knowledge Graph"
   authors: "G. Taheri, M. Habibi, T. Sedghamiz"
-  venue: "ECML PKDD"
+  venue: "European Conference on Machine Learning and Knowledge Discovery in Databases (ECML PKDD)"
   url: ""
 - year: 2024
   title: "Uncovering driver genes in breast cancer through an innovative machine learning mutational analysis method"
