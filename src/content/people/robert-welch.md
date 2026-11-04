@@ -22,6 +22,7 @@ category: "phd"
 status: "current"
 group_leader: "Kevin Smith"
 affiliation: "KTH · SciLifeLab"
+website: "https://www.kth.se/profile/rwe2"
 order: 203
 draft: false
 ---

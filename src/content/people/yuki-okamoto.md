@@ -22,6 +22,8 @@ category: "phd"
 status: "current"
 group_leader: "Jens Lagergren"
 affiliation: "KTH · SciLifeLab"
+google_scholar: "https://scholar.google.com/citations?user=2kMIzt0AAAAJ"
+website: "https://www.kth.se/profile/okamoto"
 order: 225
 draft: false
 ---

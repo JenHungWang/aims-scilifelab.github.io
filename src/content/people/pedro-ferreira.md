@@ -22,6 +22,8 @@ category: "postdoc"
 status: "current"
 group_leader: "Jens Lagergren"
 affiliation: "KTH · SciLifeLab"
+google_scholar: "https://scholar.google.com/citations?user=wBVuepgAAAAJ"
+website: "https://www.kth.se/profile/pedrofe"
 order: 151
 draft: false
 ---

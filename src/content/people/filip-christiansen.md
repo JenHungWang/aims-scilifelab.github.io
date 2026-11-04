@@ -22,6 +22,7 @@ category: "phd"
 status: "current"
 group_leader: "Kevin Smith"
 affiliation: "KI · SciLifeLab"
+website: "https://ki.se/en/people/fichri"
 order: 204
 draft: false
 ---

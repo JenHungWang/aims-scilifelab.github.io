@@ -22,6 +22,8 @@ category: "phd"
 status: "current"
 group_leader: "Kevin Smith"
 affiliation: "KTH · SciLifeLab"
+google_scholar: "https://scholar.google.com/citations?user=gYOyXQQAAAAJ"
+website: "https://www.kth.se/profile/jhwang2"
 order: 209
 draft: false
 ---

@@ -1,11 +1,11 @@
 ---
 name: "Akshaya Thippur"
 face:
-  skin: "#aa7a4e"
+  skin: "#a67c52"
   face: "round"
   hair: {style: "short", color: "#17120f"}
   beard: {style: "shortBeard"}
-  eyes: "#241a12"
+  eyes: "#1f1711"
   glasses: "none"
   shirt: "#3f8a44"
   collar: false
@@ -22,6 +22,8 @@ category: "researcher"
 status: "current"
 group_leader: "Kevin Smith"
 affiliation: "KI · SciLifeLab"
+google_scholar: "https://scholar.google.com/citations?user=tJeWKQMAAAAJ"
+website: "https://www.kth.se/profile/akshaya"
 order: 110
 draft: false
 ---

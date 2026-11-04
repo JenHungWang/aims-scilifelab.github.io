@@ -49,7 +49,7 @@ function hairBack(style, hc) {
 }
 
 // ---- 3b. BEARD -----------------------------------------------------------
-const BEARDLINE = { full:[57,62], shortBeard:[73,66], stubble:[76,69] };
+const BEARDLINE = { full:[59,66], shortBeard:[73,66], stubble:[76,69] };
 function beardBand(style, bc, line) {
   const mustache = `<path d="M39 69 q11 5 22 0 q-3.5 4.5 -11 4.5 q-7.5 0 -11 -4.5z" fill="${bc}"/>`;
   if (style === 'none') return {};
@@ -80,6 +80,20 @@ function mouthSVG(expr, surprised, lip) {
     case 'grin':    return `<path d="M41 ${MOUTH_Y-1} q9 7 18 0 q-9 3 -18 0z" fill="#fff" stroke="${lip}" stroke-width="1.6" stroke-linejoin="round"/>`;
     case 'smile':
     default:        return `<path d="M43.5 ${MOUTH_Y} q6.5 4.5 13 0" stroke="${lip}" stroke-width="2" fill="none" stroke-linecap="round"/>`;
+  }
+}
+
+// Skin opening behind the mouth when a beard is present: hugs the mouth tightly
+// (thin even margin) and matches the expression, so the mouth reads as a mouth
+// in the beard rather than a pale patch. Scaled horizontally with the mouth.
+function mouthMask(expr, surprised, skin) {
+  if (surprised) return `<ellipse cx="50" cy="75" rx="5" ry="6" fill="${skin}"/>`;
+  switch (expr) {
+    case 'neutral': return `<ellipse cx="50" cy="${MOUTH_Y+0.6}" rx="8.0" ry="2.3" fill="${skin}"/>`;
+    case 'slight':  return `<ellipse cx="50" cy="${MOUTH_Y+0.8}" rx="8.2" ry="2.7" fill="${skin}"/>`;
+    case 'grin':    return `<ellipse cx="50" cy="${MOUTH_Y+1.8}" rx="9.8" ry="4.2" fill="${skin}"/>`;
+    case 'smile':
+    default:        return `<ellipse cx="50" cy="${MOUTH_Y+1}" rx="8.4" ry="3.0" fill="${skin}"/>`;
   }
 }
 
@@ -156,19 +170,20 @@ export function faceSVG2(cfg, dx, dy, surprised, blink) {
        <path d="M${eyeR-6} ${browY} q6 ${browCurve} 12 0" stroke="${browC}" stroke-width="${bW}" fill="none" stroke-linecap="round"/>`;
   const nLen = (NOSE_BOT - NOSE_TOP) * nSz, nTip = 2.5 * nWd;
   const nose = `<path d="M50 ${NOSE_TOP} l${(-nTip).toFixed(1)} ${nLen.toFixed(1)} q${nTip.toFixed(1)} 2 ${(nTip*2).toFixed(1)} 0" stroke="${noseInk}" stroke-width="1.3" fill="none" stroke-linecap="round" opacity=".55"/>`;
-  const mouth = `<g transform="translate(50 0) scale(${mW} 1) translate(-50 0)">${mouthSVG(expr, surprised, lip)}</g>`;
-
   const beard = beardBand(beardS, beardC, cfg.beard && cfg.beard.line);
   const beardClip  = beard.clip  ? `<g clip-path="url(#${cid})">${beard.clip}</g>` : '';
   const beardFront = beard.front || '';
-  const mouthHole = beard.clip ? `<path d="M44 73 Q50 71.6 56 73 Q56.6 75.4 50 76 Q43.4 75.4 44 73 Z" fill="${skin}"/>` : '';
+  const hasBeard = !!beard.clip;
+  const mouth = `<g transform="translate(50 0) scale(${mW} 1) translate(-50 0)">${hasBeard ? mouthMask(expr, surprised, skin) : ''}${mouthSVG(expr, surprised, lip)}</g>`;
+  // The mouth opening in the beard is drawn with the mouth itself (mouthMask).
+  const mouthHole = '';
   const hairMain   = (hairS === 'bald' || isHijab) ? '' : `<g clip-path="url(#${cid})">${hairBand(hairS, hairC, cfg.hair && cfg.hair.line)}</g>`;
 
   // Gag modes: `tall` crops the frame to just the chin (head up & off-frame, a
   // big torso fills it); `short` sits the figure low so the top of the head AND
   // the eyes peek over the bottom edge.
   const tall = !!cfg.tall, short = !!cfg.short;
-  const headYOff = tall ? 64 : (short ? -38 : 0);
+  const headYOff = tall ? 52 : (short ? -44 : 0);
   const bodyTall = tall
     ? `<path d="M16 120 C 19 74 31 37 50 37 C 69 37 81 74 84 120 Z" fill="${shirt}"/>
        <path d="M44 21 C 44 28 44 34 46 37 C 48 38 52 38 54 37 C 56 34 56 28 56 21 Z" fill="${skin}"/>`

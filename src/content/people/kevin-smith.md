@@ -3,7 +3,7 @@ name: "Kevin Smith"
 face:
   skin: "#ecc8a6"
   face: "oval"
-  hair: {style: "buzz", color: "#8a8178"}
+  hair: {style: "buzz", color: "#7a6a50"}
   beard: {style: "shortBeard"}
   eyes: "#6d8192"
   glasses: "none"

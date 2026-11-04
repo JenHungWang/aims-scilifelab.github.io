@@ -22,6 +22,7 @@ category: "researcher"
 status: "current"
 group_leader: "Jens Lagergren"
 affiliation: "KTH · SciLifeLab"
+website: "https://www.kth.se/profile/hoseint"
 order: 120
 draft: false
 ---
