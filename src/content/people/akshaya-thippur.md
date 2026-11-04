@@ -1,11 +1,11 @@
 ---
 name: "Akshaya Thippur"
 face:
-  skin: "#a67c52"
+  skin: "#aa7a4e"
   face: "round"
   hair: {style: "short", color: "#17120f"}
   beard: {style: "shortBeard"}
-  eyes: "#1f1711"
+  eyes: "#d9a62f"
   glasses: "none"
   shirt: "#3f8a44"
   collar: false

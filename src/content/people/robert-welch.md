@@ -4,12 +4,12 @@ face:
   skin: "#efcba6"
   face: "oval"
   hair: {style: "short", color: "#6b4f33"}
-  beard: {style: "none"}
+  beard: {style: "full"}
   eyes: "#6d8192"
   glasses: "none"
   shirt: "#d2d7dd"
   collar: true
-  expression: "slight"
+  expression: "smile"
   eyeSize: "md"
   eyeShape: "almond"
   browShape: "straight"

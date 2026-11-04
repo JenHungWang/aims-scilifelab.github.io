@@ -1,15 +1,15 @@
 ---
 name: "Jens Lagergren"
 face:
-  skin: "#ecc6a2"
-  face: "wide"
-  hair: {style: "short", color: "#a39a8c"}
+  skin: "#edc9a6"
+  face: "round"
+  hair: {style: "short", color: "#b0a287"}
   beard: {style: "none"}
-  eyes: "#6a7d8c"
+  eyes: "#6f8798"
   glasses: "bold"
-  shirt: "#7d8794"
+  shirt: "#d2d7dd"
   collar: true
-  expression: "slight"
+  expression: "smile"
   eyeShape: "hooded"
   browShape: "straight"
   browWeight: "med"

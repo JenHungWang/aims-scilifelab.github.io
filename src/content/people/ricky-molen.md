@@ -3,7 +3,7 @@ name: "Ricky Molén"
 face:
   skin: "#ecc6a2"
   face: "oval"
-  hair: {style: "short", color: "#8a7250"}
+  hair: {style: "short", color: "#bda074"}
   beard: {style: "none"}
   eyes: "#8aa0b0"
   glasses: "none"
