@@ -111,9 +111,8 @@ const orgRepos = (await fetchOrgRepos(GITHUB_ORG))
     <section class="section-tight" aria-labelledby="repos-h">
       <div class="wrap">
         <h2 id="repos-h" class="cat">All repositories</h2>
-        <p class="muted measure sub">Listed automatically from
-          <a class="link" href={GITHUB_URL} target="_blank" rel="noopener">github.com/{GITHUB_ORG}</a>
-          — refreshed every time the site is built.</p>
+        <p class="muted measure sub">From
+          <a class="link" href={GITHUB_URL} target="_blank" rel="noopener">github.com/{GITHUB_ORG}</a>.</p>
         <div class="proj-grid">
           {orgRepos.map((r: any) => (
             <a class="card proj" href={r.html_url} target="_blank" rel="noopener">
