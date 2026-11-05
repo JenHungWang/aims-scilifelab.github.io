@@ -22,6 +22,7 @@ category: "phd"
 status: "current"
 group_leader: "Kevin Smith"
 affiliation: "KI · SciLifeLab"
+google_scholar: "https://scholar.google.com/citations?user=StVCLV8AAAAJ"
 website: "https://ki.se/en/people/filip-christiansen-2"
 order: 204
 draft: false
